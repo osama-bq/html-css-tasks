@@ -1,0 +1,32 @@
+.custom-btn {
+    width: 110px;
+    height: 32px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.custom-btn i {
+    font-size: 19px;
+}
+
+.custom-text {
+    line-height: 1;
+}
+
+.custom-text small {
+    display: block;
+    font-size: 7px;
+}
+
+.custom-text strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+}
