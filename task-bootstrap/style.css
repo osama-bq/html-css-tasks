@@ -60,6 +60,25 @@ body {
     box-shadow: 0 42px 34px 0 #3F87F540;
 }
 
+.btn-card {
+    color: #3F87F5;
+    background-color: #F496D110;
+}
+
+.btn-card:hover {
+    color: #ffffff !important;
+    background-color: #F496D1;
+}
+
+.card-highlight .btn-card {
+    background-color: #ffffff;
+}
+
+.card-highlight .btn-card:hover {
+    background-color: transparent;
+    border-color: white;
+}
+
 .custom-btn {
     width: 135px;
     height: 40px;
