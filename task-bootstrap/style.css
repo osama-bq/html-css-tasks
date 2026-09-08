@@ -42,6 +42,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.ff-inter {
+    font-family: 'Inter', sans-serif;
+}
+
 .lh-28 {
     line-height: 28px;
 }
@@ -54,8 +58,12 @@ body {
     color: #7E848C;
 }
 
-.gray {
+.gray3 {
     color: #D9DBE1;
+}
+
+.gray4 {
+    color: #747474;
 }
 
 .caption-title {
@@ -123,8 +131,27 @@ body {
     margin-right: .5rem;
 }
 
+.price {
+    line-height: 46px;
+    font-size: 36px;
+}
+
+.package-type {
+    font-size: 28px;
+}
+
 .price, .package-type {
     color: #231D4F;
+}
+
+.comments {
+    letter-spacing: 0.2px;
+    line-height: 26px;
+}
+
+.badge {
+    background-color: #FF4E4E;
+    font-weight: 900;
 }
 
 .card-highlight .price, .card-highlight .package-type {
