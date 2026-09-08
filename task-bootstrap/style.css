@@ -3,11 +3,11 @@ body {
 }
 
 .fs-14 {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .fs-15 {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .fs-16 {
@@ -34,8 +34,28 @@ body {
     font-weight: 400;
 }
 
+.ff-manrope {
+    font-family: 'Manrope', sans-serif;
+}
+
 .ff-roboto {
     font-family: 'Roboto', sans-serif;
+}
+
+.lh-28 {
+    line-height: 28px;
+}
+
+.gray1 {
+    color: #6C6C6C;
+}
+
+.gray2 {
+    color: #7E848C;
+}
+
+.gray {
+    color: #D9DBE1;
 }
 
 .caption-title {
@@ -60,6 +80,16 @@ body {
     box-shadow: 0 42px 34px 0 #3F87F540;
 }
 
+.btn-book {
+    background-color: #fff;
+    color: #3F87F5;
+}
+
+.btn-book:hover {
+    background-color: #fffd;
+    color: #3F87F5;
+}
+
 .btn-card {
     color: #3F87F5;
     background-color: #F496D110;
@@ -77,6 +107,24 @@ body {
 .card-highlight .btn-card:hover {
     background-color: transparent;
     border-color: white;
+}
+
+.card-highlight .bi.bi-check {
+    border-radius: 50%;
+    background-color: #ffffff1A;
+    color: #ffffff;
+    margin-right: .5rem;
+}
+
+.bi.bi-check {
+    border-radius: 50%;
+    background-color: #5243C21A;
+    color: #5243C2;
+    margin-right: .5rem;
+}
+
+.card-highlight .price, .card-highlight .package-type {
+    color: #ffffff;
 }
 
 .custom-btn {
