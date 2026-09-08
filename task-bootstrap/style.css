@@ -30,3 +30,14 @@
     font-size: 13px;
     font-weight: 500;
 }
+
+@media (max-width: 768px) {
+    .w-img-container {
+        overflow: hidden;
+    }
+    .w-img {
+        width: 1100px !important;
+        position: relative;
+        left: calc(50% - 550px);
+    }
+}
