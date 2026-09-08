@@ -123,6 +123,10 @@ body {
     margin-right: .5rem;
 }
 
+.price, .package-type {
+    color: #231D4F;
+}
+
 .card-highlight .price, .card-highlight .package-type {
     color: #ffffff;
 }
