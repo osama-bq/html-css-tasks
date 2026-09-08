@@ -2,6 +2,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.fs-14 {
+    font-size: 16px;
+}
+
+.fs-15 {
+    font-size: 16px;
+}
+
 .fs-16 {
     font-size: 16px;
 }
@@ -24,6 +32,10 @@ body {
 
 .ff-roboto {
     font-family: 'Roboto', sans-serif;
+}
+
+.caption-title {
+    font-size: 48px;
 }
 
 .card {
@@ -78,6 +90,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .caption-title {
+        font-size: 24px;
+    }
+
     .w-img-container {
         overflow: hidden;
     }
