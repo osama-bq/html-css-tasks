@@ -39,6 +39,7 @@ body {
     font-weight: 400;
 }
 
+
 .ff-manrope {
     font-family: 'Manrope', sans-serif;
 }
@@ -71,8 +72,102 @@ body {
     color: #747474;
 }
 
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 0px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Slide */
+.carousel-caption {
+    max-width: 639px;
+    margin: 0 auto;
+}
+
 .caption-title {
     font-size: 48px;
+}
+
+.caption-body {
+    text-align: center;
+    max-width: 456px;
+    margin: 1rem auto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.btn-book {
+    width: 168px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #3F87F5;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0px;
+}
+
+/* Content */
+.content-title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0;
+}
+
+.content-body {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #6C6C6C;
+}
+
+.btn-explore {
+    width: 230;
+    height: 44;
+    opacity: 1;
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    gap: 8px;
+    background: #3F87F5;
+    color: white;
+    border-radius: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+/* Packages */
+.package-title {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.packages .card {
+    max-width: 232px;
+    margin: 0 auto;
+}
+
+.card-body {
+    width: 100%;
 }
 
 .card {
@@ -81,22 +176,22 @@ body {
 
 .card:hover {
     z-index: 10;
-    transform: scale(1.1);
+    transform: scale(105%);
 }
 
 .packages .card:hover {
     box-shadow: 0 42px 34px 0 #3F87F540;
     background-color: #3F87F5;
     color: #fff;
+    border-radius: 26px;
 }
 
 .packages .card:hover .btn-card {
     background-color: white;
 }
 
-.btn-book {
-    background-color: #fff;
-    color: #3F87F5;
+.packages .card:hover .badge-hot {
+    display: inline !important;
 }
 
 .btn-book:hover {
@@ -164,6 +259,17 @@ body {
     font-weight: 900;
 }
 
+/* Accordion */
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-item {
+    border: 1px solid #D5E5FB;
+    border-radius: 5px;
+}
+
 .custom-btn {
     width: 135px;
     height: 40px;
@@ -198,9 +304,44 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* Slide */
+    .carousel-caption {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
     .caption-title {
         font-size: 24px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: 0px;
     }
+
+    /* Content */
+    .content-title {
+        font-size: 19px;
+    }
+
+    .content-body {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Navbar */
+    .navbar-brand {
+        font-weight: 700;
+        font-style: bold;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0px;
+    }
+
+    .package-title {
+        font-weight: 600;
+        font-size: 19px;
+    }
+
 
     .w-img-container {
         overflow: hidden;
@@ -209,5 +350,8 @@ body {
         width: 1100px !important;
         position: relative;
         left: calc(50% - 550px);
+    }
+    .fs-38  {
+        font-size: 19px;
     }
 }
