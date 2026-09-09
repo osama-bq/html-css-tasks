@@ -74,18 +74,19 @@ body {
     transition: transform 0.3s ease;
 }
 
-.card:hover, .card-highlight:hover {
+.card:hover {
     z-index: 10;
     transform: scale(1.1);
-    box-shadow: 0 42px 34px 0 #00000010;
 }
 
-.card-highlight {
-    background-color: #3F87F5;
-}
-
-.card-highlight:hover {
+.packages .card:hover {
     box-shadow: 0 42px 34px 0 #3F87F540;
+    background-color: #3F87F5;
+    color: #fff;
+}
+
+.packages .card:hover .btn-card {
+    background-color: white;
 }
 
 .btn-book {
@@ -101,23 +102,23 @@ body {
 .btn-card {
     color: #3F87F5;
     background-color: #F496D110;
+    transition: none;
 }
 
-.btn-card:hover {
-    color: #ffffff !important;
-    background-color: #F496D1;
+.btn-card:active {
+    background-color: transparent !important;
+    color: white !important;
 }
 
-.card-highlight .btn-card {
+.packages.card:hover .btn-card {
     background-color: #ffffff;
 }
 
-.card-highlight .btn-card:hover {
-    background-color: transparent;
+.packages .card:hover .btn-card:hover {
     border-color: white;
 }
 
-.card-highlight .bi.bi-check {
+.card:hover .bi.bi-check {
     border-radius: 50%;
     background-color: #ffffff1A;
     color: #ffffff;
@@ -144,6 +145,10 @@ body {
     color: #231D4F;
 }
 
+.packages .card:hover .price, .packages .card:hover .package-type {
+    color: white;
+}
+
 .comments {
     letter-spacing: 0.2px;
     line-height: 26px;
@@ -152,10 +157,6 @@ body {
 .badge {
     background-color: #FF4E4E;
     font-weight: 900;
-}
-
-.card-highlight .price, .card-highlight .package-type {
-    color: #ffffff;
 }
 
 .custom-btn {

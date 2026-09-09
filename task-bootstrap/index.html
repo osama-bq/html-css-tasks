@@ -19,7 +19,7 @@
 <body>
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg py-4 shadow-sm">
-        <div class="container">
+        <div class="container flex-nowrap">
             <a class="navbar-brand fw-700 text-wrap" href="#" style="font-size: 22px;">Abacus Convention Center</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="img/menu-2 1.png">
@@ -134,7 +134,7 @@
                         <div>
                             <button class="btn text-white px-3 rounded-0 fw-700 fs-16" style="background-color: #3F87F5;">
                                 Explore our album
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right ff-700" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
                                 </svg>
                             </button>
@@ -168,6 +168,7 @@
             <div class="row gy-3">
                 <div class="col-md-3">
                     <div class="card border-0 rounded-4">
+                        <span class="badge badge-hot position-absolute text-white rounded-pill end-0 translate-middle-y px-2 ff-roboto" hidden>Hot</span>
                         <div class="card-body py-5">
                             <h3 class="price fw-700 ff-roboto">$300</h3>
                             <h4 class="package-type fw-700 ff-roboto">Business fair</h4>
@@ -212,6 +213,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card border-0 rounded-4">
+                        <span class="badge badge-hot position-absolute text-white rounded-pill end-0 translate-middle-y px-2 ff-roboto" hidden>Hot</span>
                         <div class="card-body py-5">
                             <h3 class="price fw-700 ff-roboto">$500</h3>
                             <h4 class="package-type fw-700 ff-roboto">wedding basic</h4>
@@ -255,8 +257,8 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card card-highlight text-white border-0 rounded-4">
-                        <span class="badge position-absolute text-white rounded-pill end-0 translate-middle-y px-2 ff-roboto">Hot</span>
+                    <div class="card border-0 rounded-4">
+                        <span class="badge badge-hot position-absolute text-white rounded-pill end-0 translate-middle-y px-2 ff-roboto" hidden>Hot</span>
                         <div class="card-body py-5">
                             <h3 class="price fw-700 ff-roboto">$800</h3>
                             <h4 class="package-type fw-700 ff-roboto" >Wedding plus</h4>
@@ -301,6 +303,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="card border-0 rounded-4">
+                        <span class="badge badge-hot position-absolute text-white rounded-pill end-0 translate-middle-y px-2 ff-roboto" hidden>Hot</span>
                         <div class="card-body py-5">
                             <h3 class="price fw-700 ff-roboto">$1200</h3>
                             <h4 class="package-type fw-700 ff-roboto">Corporate event</h4>
@@ -349,7 +352,7 @@
     <!-- Packages -->
 
     <!-- Testimonials -->
-    <section class="packages">
+    <section class="testimonials">
         <div class="container my-5">
             <div class="row">
                 <div class="col-md-12 text-center my-5">
@@ -402,7 +405,7 @@
     <!-- Testimonials -->
 
     <!-- FAQs -->
-    <section class="packages">
+    <section class="testimonials">
         <div class="container my-5">
             <div class="row">
                 <div class="col-md-12 text-center my-5">
@@ -489,6 +492,19 @@
     <!-- Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const cards = document.querySelectorAll('.packages .card');
+        cards.forEach(card => {
+            const badgeHot = card.querySelector('.badge');
+            console.log(badgeHot);
+            card.addEventListener('mouseover', () => {
+                badgeHot.hidden = false;
+            });
+            card.addEventListener('mouseleave', () => {
+                badgeHot.hidden = true;
+            });
+        });
+    </script>
 </body>
 </html>
 
